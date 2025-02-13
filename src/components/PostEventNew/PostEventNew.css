@@ -1,0 +1,7 @@
+.custom-quill-editor .ql-editor {
+    font-size: 15px !important; /* Override Quill's default font size */
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 50px;
+    min-height: 500px;
+}
