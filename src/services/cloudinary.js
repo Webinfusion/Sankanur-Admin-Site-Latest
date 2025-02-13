@@ -15,9 +15,7 @@ const generateFileHash = async (file) => {
 // Check Already the Image is Link is Exists or Not
 const checkIfImageLinkAlreadyExists = async (fileHash) => {
   const url = `${checkIfImgAlreadyExistConst}/${fileHash}`
-  console.log("url = ", url)
   const response = await apiGet(url);
-  console.log('red =', response.secure_url)
   return response.secure_url
 }
 
@@ -40,7 +38,6 @@ const uploadImageToCloudinary = async (file) => {
         'Content-Type': 'multipart/form-data',
       },
     });
-    console.log("URL = ", response.data.secure_url)
     return response.data.secure_url; // Return the image URL
   } catch (error) {
     console.error('Error uploading image to Cloudinary', error);

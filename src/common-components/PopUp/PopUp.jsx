@@ -41,6 +41,7 @@ const PopUp = ({ status, message }) => {
       <Alert
         severity={status}
         sx={{
+          fontSize: '18px',
           width: '100%',
           minWidth: '300px',
           marginTop: '55px',
